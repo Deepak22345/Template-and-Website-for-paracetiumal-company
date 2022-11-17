@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles1.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRI MARUTHI PHARMA</title>
+</head>
+<body>
+    <section class="header">
+        <div id="LandingPage">
+    <nav>
+    <div class="nav-links">
+    <ul>   
+    <li>  <a href="#">SRI MARUTHI PHARMA</a></li>
+    </ul>
+
+    </div>
+    <div> <li>  <a href="#" class="btn">SEARCH</a></li></div>
+
+    <div> <li>  <a href="#" class="btn1"><h1>->Home</h1></a></li></div> <br> 
+    <div> <li>  <a href="#" class="btn2" onclick="B()"><h1>->Medicene</h1></a></li></div><br> 
+    <script>
+        function B(){
+            document.write("1.Acetaminophen.<BR>2.Adderall.<BR>3.Amitriptyline.<BR>4.Amlodipine.<BR>5.Amoxicillin.<BR>6.Ativan") 
+        }
+    </script>
+    <div> <li>  <a href="#" class="btn2"><h1>->Health  care</h1></a></li></div> <br>  
+    <div> <li>  <a href="#" class="btn2"><h1>-New launches</h1></a></li></div> <br>
+ 
+    <div class="content">  
+    <p> We're thrilled to announce that <h1>SRI MARUTHI PHARMA</h1> will be launching a new line of  healthcare products in the<br> coming weeks. <br><br>
+     We know that there's not a day that goes by when you don't <br> need your prescriptions filled, and whether you're sick or <br> just plain old, we  want to make sure you have everything<br> you  need.
+        
+    </div>
+    <section class="foot">    
+        <div> <li>  <a href="#" class="b1" onclick="A()"><h1>ABOUT US ? </h1></a></li></div>
+        <script>
+            function A(){
+                document.write(" In its investigation of herbal and chemical ingredients, the work of the apothecary may be regarded as a precursor of the modern sciences of chemistry and pharmacology, prior to the formulation of the scientific method.") 
+            }
+        </script>
+</body>
+</html>
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+   body{
+        background-color: antiquewhite;
+    }
+
+    .nav{
+        display: flex;
+        padding: 2% 6%;
+        justify-content: space-between;
+        align-items: center;
+      }
+    .nav-links{
+     text-align: center;
+    }
+
+    .nav-links ul li{
+        list-style: none;
+        display: inline-block;
+        padding: 8px 12px;
+        position: relative;
+    }
+    .nav-links ul li a{
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+
+.header{
+    height: 100vh;
+    width: 100%;
+    background-image :url(pharma.jpg);
+    background-position: center;
+    background-size: cover;
+    } 
+
+ 
+    
+ #LandingPage{
+        display: grid;
+        margin: 0 3rem;
+        grid-template-columns: repeat(12,1fr);
+        column-gap: 10px;
+ }
+
+ .content{
+    font-size: 140%;
+    margin-top: 0rem;
+   margin-left: 0rem; 
+    white-space: nowrap;
+    color: rgb(83, 39, 1)
+
+}
+
+
+
+
+.btn{
+    display: inline-block;
+    background: #81EBE3;
+    color: rgb(0, 0, 0);
+    padding: 10px 30px;
+    border-radius: 10px;
+    white-space: nowrap;
+    margin-left: 80rem;
+}
+
+.btn1{
+    font-size: 125%;
+    display: inline-block;
+    background:#81EBE3;
+    color: black;
+    margin-top: 5rem;
+    margin-left:74rem;
+    white-space: nowrap;
+}
+
+
+.btn2{
+    font-size: 125%;
+    display: inline-block;
+    background:#81EBE3;
+    color:black;
+    margin-left:74rem;
+    margin-top: 0rem;
+    white-space: nowrap;
+}
+
+.foot{
+    width: 100;
+    text-align: right;
+    padding: 30px 0;
+    margin-top: 8rem;
+    }
